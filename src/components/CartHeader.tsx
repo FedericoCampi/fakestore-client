@@ -38,18 +38,18 @@ const CartHeader: React.FC = () => {
 
       {/* Modal al pasar el mouse */}
       {showModal && (
-        <div className="absolute right-0 top-10 bg-white border rounded shadow-lg w-80 p-4 z-10">
-          <h2 className="text-lg font-bold mb-2">Carrito de Compras</h2>
+        <div className="bg-white -mt-4 absolute right-0 top-10 border rounded shadow-xl w-80 p-4 z-10">
+          <h2 className=" text-lg font-bold mb-2">Carrito de Compras</h2>
           {cart.length === 0 ? (
-            <p>El carrito está vacío.</p>
+            <p className="">El carrito está vacío.</p>
           ) : (
             <ul className="max-h-60 overflow-y-auto">
               {cart.map((product) => (
                 <li
                   key={product.id}
-                  className="flex justify-between items-center py-2 border-b"
+                  className=" flex justify-between items-center py-2 border-b"
                 >
-                  <div>
+                  <div className="">
                     <p className="font-semibold text-sm">{product.title}</p>
                     <p className="text-gray-600 text-xs">
                       ${product.price.toFixed(2)}
