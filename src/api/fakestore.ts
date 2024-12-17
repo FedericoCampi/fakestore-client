@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL: string = import.meta.env.VITE_API_URL || "https://fakestoreapi.co"
+const API_URL: string = import.meta.env.VITE_API_URL || "https://fakestoreapi.com"
 
 export const obtenerProductos = async () => {
   const response = await axios.get(`${API_URL}/products`);
