@@ -9,10 +9,12 @@ type ProductProps = {
   };
 };
 
+const API_URL: string = import.meta.env.VITE_API_URL || "";
+
 const ProductCard: React.FC<ProductProps> = ({ producto }) => {
   return (
     <a
-      href={`/producto/${producto.id}`}
+    href={API_URL ? `/producto/${producto.id}` : undefined}
       className="w-full flex flex-col justify-between items-center border rounded-lg p-4 shadow-md hover:shadow-lg hover:bg-gray-400"
     >
       <img src={producto.image} alt={producto.title} className="h-40 object-contain mx-auto" />

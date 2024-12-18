@@ -1,6 +1,6 @@
 ## Fake store
 
-Una aplicación web que interactúa con la [FakeStore API](https://fakestoreapi.com/docs) para mostrar una lista de productos y permitir a los usuarios ver los detalles de cada producto.
+Una aplicación web responsive que interactúa con la [FakeStore API](https://fakestoreapi.com/docs) para mostrar una lista de productos y permitir a los usuarios ver los detalles de cada producto.
 
 ## Tecnologías utilizadas
 
@@ -47,3 +47,10 @@ Antes de comenzar, asegúrate de tener instalado:
 
    ```bash
    npm run dev
+
+---
+
+**Url desplegada en Vercel:**
+
+***https://fakestore-client.vercel.app/***
+Levantar backend(fakestore-api) para funcionalidades

@@ -37,7 +37,13 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const removeFromCart = (id: number) => {
-    setCart((prev) => prev.filter((product) => product.id !== id));
+    setCart((prev) => {
+      const index = prev.findIndex((product) => product.id === id);
+      if (index !== -1) {
+        return [...prev.slice(0, index), ...prev.slice(index + 1)];
+      }
+      return prev; // Retorna el array sin cambios si no se encuentra el id
+    });
   };
 
   const clearCart = () => {
