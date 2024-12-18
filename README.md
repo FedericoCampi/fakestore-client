@@ -52,5 +52,5 @@ Antes de comenzar, asegúrate de tener instalado:
 
 **Url desplegada en Vercel:**
 
-***https://fakestore-client.vercel.app/***
+***https://fakestore-client.vercel.app/***  
 Levantar backend(fakestore-api) para funcionalidades
